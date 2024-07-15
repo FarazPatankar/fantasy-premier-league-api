@@ -1,5 +1,3 @@
-export interface GreetOptions {
-	logger?: (message: string) => void;
-	message: string;
-	times?: number;
+export interface DummyInterface {
+	dummyMessage: string;
 }
