@@ -1,6 +1,6 @@
 {
 	"name": "fantasy-premier-league-api",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "A type-safe wrapper for the Fantasy Premier League API.",
 	"repository": {
 		"type": "git",
