@@ -1,3 +1,9 @@
+## [0.1.1](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.1.0...0.1.1) (2024-07-17)
+
+### Bug Fixes
+
+- restructure schema ([ffb4d1d](https://github.com/FarazPatankar/fantasy-premier-league-api/commit/ffb4d1d47b9206b80a4682be90a54d865a75774f))
+
 # 0.1.0 (2024-07-15)
 
 ### Features
