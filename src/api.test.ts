@@ -1,10 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { dummyFn } from "./api.js";
+import * as v from "valibot";
+
+import { getEventFixtures } from "./api.js";
+import { FixtureSchema } from "./schema.js";
 
 describe("api", () => {
-	it("returns true", () => {
-		const response = dummyFn();
+  it("getEventFixtures", async () => {
+    const response = await getEventFixtures({ event: 38 });
+    const result = v.safeParse(v.array(FixtureSchema), response);
 
-		expect(response).toBe(true);
-	});
+    expect(result.success).toBe(true);
+  });
 });
