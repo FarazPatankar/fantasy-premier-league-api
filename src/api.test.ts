@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import * as v from "valibot";
 
 import { getEventFixtures } from "./api.js";
-import { FixtureSchema } from "./schema.js";
+import { FixtureSchema } from "./index.js";
 
 describe("api", () => {
   it("getEventFixtures", async () => {

@@ -1,6 +1,6 @@
 import { ofetch } from "ofetch";
 
-import { Fixture } from "./schema.js";
+import { Fixture } from "./schema/fixture.js";
 
 const BASE_URL = "https://fantasy.premierleague.com/api";
 
