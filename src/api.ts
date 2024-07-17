@@ -1,3 +1,5 @@
+import { ofetch } from "ofetch";
+
 import { Fixture } from "./schema.js";
 
 const BASE_URL = "https://fantasy.premierleague.com/api";
@@ -12,8 +14,9 @@ export const getEventFixtures = async ({
 }: {
   event: number;
 }): Promise<Fixture[]> => {
-  const response = await fetch(`${BASE_URL}/fixtures/?event=${event}`);
-  const data = await response.json();
+  const response = await ofetch<Fixture[]>(
+    `${BASE_URL}/fixtures/?event=${event}`,
+  );
 
-  return data;
+  return response;
 };
