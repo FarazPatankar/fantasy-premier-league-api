@@ -15,20 +15,39 @@
 	<img alt="💪 TypeScript: Strict" src="https://img.shields.io/badge/%F0%9F%92%AA_typescript-strict-21bb42.svg" />
 </p>
 
-## Note
-
-Big WIP: Don't use it yet.
-
 ## Usage
 
 ```shell
 npm i fantasy-premier-league-api
 ```
 
-```ts
-import { greet } from "fantasy-premier-league-api";
+### getBootstrapStatic
 
-greet("Hello, world! 💖");
+Get the bootstrap-static endpoint data which returns:
+
+- element_stats
+- element_types
+- elements
+- events
+- game_settings
+- phases
+- teams
+- total_players
+
+```ts
+import { getBootstrapStatic } from "fantasy-premier-league-api";
+
+const bootstrap = await getBootstrapStatic();
+```
+
+### getEventFixtures
+
+Get the fixtures for a specific event.
+
+```ts
+import { getEventFixtures } from "fantasy-premier-league-api";
+
+const fixtures = await getEventFixtures({ event: 1 });
 ```
 
 ## Contributors
