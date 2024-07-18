@@ -1,3 +1,9 @@
+# [0.2.0](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.1.1...0.2.0) (2024-07-18)
+
+### Features
+
+- add bootstrap-static endpoint ([c70425a](https://github.com/FarazPatankar/fantasy-premier-league-api/commit/c70425a571f84b13ea32e9a9c00e7f16d43a9413))
+
 ## [0.1.1](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.1.0...0.1.1) (2024-07-17)
 
 ### Bug Fixes
