@@ -1,6 +1,7 @@
 import { ofetch } from "ofetch";
 
 import { Fixture } from "./schema/fixture.js";
+import { BootstrapStatic } from "./index.js";
 
 const BASE_URL = "https://fantasy.premierleague.com/api";
 
@@ -16,6 +17,26 @@ export const getEventFixtures = async ({
 }): Promise<Fixture[]> => {
   const response = await ofetch<Fixture[]>(
     `${BASE_URL}/fixtures/?event=${event}`,
+  );
+
+  return response;
+};
+
+/**
+ * Fetches the current bootstrap-static endpoint data which
+ * returns:
+ * - element_stats
+ * - element_types
+ * - elements
+ * - events
+ * - game_settings
+ * - phases
+ * - teams
+ * - total_players
+ */
+export const getBootstrapStatic = async (): Promise<BootstrapStatic> => {
+  const response = await ofetch<BootstrapStatic>(
+    `${BASE_URL}/bootstrap-static/`,
   );
 
   return response;
