@@ -1,3 +1,9 @@
+# [0.3.0](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.2.0...0.3.0) (2024-07-20)
+
+### Features
+
+- add fn to getAllFixtures ([7b4dc8b](https://github.com/FarazPatankar/fantasy-premier-league-api/commit/7b4dc8b62d832a61f64f48f2a44b22cf8ed3cb70))
+
 # [0.2.0](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.1.1...0.2.0) (2024-07-18)
 
 ### Features
