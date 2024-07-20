@@ -5,12 +5,20 @@ import { getEventFixtures } from "./api.js";
 import {
   BootstrapStaticSchema,
   FixtureSchema,
+  getAllFixtures,
   getBootstrapStatic,
 } from "./index.js";
 
 describe("api", () => {
   it("getEventFixtures", async () => {
     const response = await getEventFixtures({ event: 38 });
+    const result = v.safeParse(v.array(FixtureSchema), response);
+
+    expect(result.success).toBe(true);
+  });
+
+  it("getAllFixtures", async () => {
+    const response = await getAllFixtures();
     const result = v.safeParse(v.array(FixtureSchema), response);
 
     expect(result.success).toBe(true);

@@ -23,8 +23,16 @@ export const getEventFixtures = async ({
 };
 
 /**
- * Fetches the current bootstrap-static endpoint data which
- * returns:
+ * @returns All fixtures for every event.
+ */
+export const getAllFixtures = async (): Promise<Fixture[]> => {
+  const response = await ofetch<Fixture[]>(`${BASE_URL}/fixtures/`);
+
+  return response;
+};
+
+/**
+ * Fetches the bootstrap-static endpoint data which returns:
  * - element_stats
  * - element_types
  * - elements
