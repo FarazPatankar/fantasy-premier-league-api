@@ -1,3 +1,9 @@
+# [0.4.0](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.3.0...0.4.0) (2025-08-20)
+
+### Features
+
+- add defensive contributions stats ([abb9802](https://github.com/FarazPatankar/fantasy-premier-league-api/commit/abb9802593a85c865ad4428999f4682c913557a7))
+
 # [0.3.0](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.2.0...0.3.0) (2024-07-20)
 
 ### Features
