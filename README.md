@@ -33,6 +33,7 @@ Get the bootstrap-static endpoint data which returns:
 - phases
 - teams
 - total_players
+- defensive_contribution
 
 ```ts
 import { getBootstrapStatic } from "fantasy-premier-league-api";
