@@ -19,6 +19,7 @@ export default tseslint.config(
     },
   },
   eslint.configs.recommended,
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
   n.configs["flat/recommended"],
   ...tseslint.config({
     extends: tseslint.configs.recommendedTypeChecked,
