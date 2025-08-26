@@ -13,6 +13,7 @@ enum FixtureStatIdentifier {
   SAVES = "saves",
   BONUS = "bonus",
   BPS = "bps",
+  DEFENSIVE_CONTRIBUTION = "defensive_contribution"
 }
 
 const FixtureStatIdentifierSchema = v.enum(FixtureStatIdentifier);

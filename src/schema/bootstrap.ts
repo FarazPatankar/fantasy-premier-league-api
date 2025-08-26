@@ -117,6 +117,8 @@ const ElementSchema = v.object({
   selected_rank_type: v.number(),
   starts_per_90: v.number(),
   clean_sheets_per_90: v.number(),
+  defensive_contribution_per_90: v.number(),
+  defensive_contribution: v.number(),
 });
 
 const ChipPlaySchema = v.object({
