@@ -117,8 +117,11 @@ const ElementSchema = v.object({
   selected_rank_type: v.number(),
   starts_per_90: v.number(),
   clean_sheets_per_90: v.number(),
+  clearances_blocks_interceptions: v.number(),
   defensive_contribution_per_90: v.number(),
   defensive_contribution: v.number(),
+  recoveries: v.number(),
+  tackles: v.number(),
 });
 
 const ChipPlaySchema = v.object({
@@ -211,7 +214,7 @@ const TeamSchema = v.object({
   points: v.number(),
   position: v.number(),
   short_name: v.string(),
-  strength: v.number(),
+  strength: v.nullable(v.number()),
   team_division: v.nullable(v.string()),
   unavailable: v.boolean(),
   win: v.number(),

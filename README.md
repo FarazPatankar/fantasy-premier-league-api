@@ -34,6 +34,9 @@ Get the bootstrap-static endpoint data which returns:
 - teams
 - total_players
 - defensive_contribution
+- clearances_blocks_interceptions
+- recoveries
+- tackles
 
 ```ts
 import { getBootstrapStatic } from "fantasy-premier-league-api";
