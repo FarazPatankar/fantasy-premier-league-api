@@ -1,3 +1,10 @@
+# [0.6.0](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.5.0...0.6.0) (2026-08-22)
+
+### Features
+
+- add defensive contribution breakdown stats ([18e8cfe](https://github.com/FarazPatankar/fantasy-premier-league-api/commit/18e8cfeabfd24354b2ae46fd845970959cf69e5d))
+- add price change projection data ([6317ba8](https://github.com/FarazPatankar/fantasy-premier-league-api/commit/6317ba8d646cc05672f361dc5b9b6a1306dea0d6))
+
 # [0.5.0](https://github.com/FarazPatankar/fantasy-premier-league-api/compare/0.3.0...0.5.0) (2025-08-26)
 
 ### Bug Fixes
