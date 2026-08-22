@@ -12,6 +12,12 @@ enum ElementTypeShortName {
   FWD = "FWD",
 }
 
+const PriceChangeProjectionSchema = v.object({
+  offset: v.number(),
+  projected_percent: v.string(),
+  likelihood: v.number(),
+});
+
 const ElementTypeSchema = v.object({
   id: v.number(),
   plural_name: v.string(),
@@ -36,6 +42,11 @@ const ElementSchema = v.object({
   cost_change_event_fall: v.number(),
   cost_change_start: v.number(),
   cost_change_start_fall: v.number(),
+  price_change_calibrating: v.boolean(),
+  price_change_hourly_rate: v.number(),
+  price_change_locked_until: v.nullable(v.string()),
+  price_change_percent: v.string(),
+  price_change_projections: v.array(PriceChangeProjectionSchema),
   dreamteam_count: v.number(),
   element_type: v.number(),
   ep_next: v.string(),

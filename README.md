@@ -37,6 +37,11 @@ Get the bootstrap-static endpoint data which returns:
 - clearances_blocks_interceptions
 - recoveries
 - tackles
+- price_change_calibrating
+- price_change_hourly_rate
+- price_change_locked_until
+- price_change_percent
+- price_change_projections
 
 ```ts
 import { getBootstrapStatic } from "fantasy-premier-league-api";
