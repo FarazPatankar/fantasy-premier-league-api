@@ -9,11 +9,13 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
+          token: ${{ secrets.ACCESS_TOKEN }}
       - uses: ./.github/actions/prepare
+      - run: npm install --global npm@latest
       - run: pnpm build
-      - env:
+      - run: pnpm exec release-it --ci --verbose
+        env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        uses: JoshuaKGoldberg/release-it-action@v0.2.2
 
 name: Release
 
